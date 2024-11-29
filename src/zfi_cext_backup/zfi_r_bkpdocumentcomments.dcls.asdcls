@@ -1,0 +1,11 @@
+@EndUserText.label: 'ACL for Root'
+@MappingRole: true
+define role ZFI_R_BKPDocumentComments {
+  grant 
+    select
+      on
+        ZFI_R_BKPDocumentComments
+          where
+            ( CompanyCode ) = aspect pfcg_auth ( F_BKPF_BUK, BUKRS , ACTVT = '03' );
+            
+}

@@ -1,0 +1,11 @@
+@EndUserText.label: 'ACL for Consumption'
+@MappingRole: true
+define role ZFI_C_BKPDocumentComments {
+  grant
+    select
+      on
+        ZFI_C_BKPDocumentComments
+          where
+            inheriting conditions from entity ZFI_R_BKPDocumentComments;
+             
+}

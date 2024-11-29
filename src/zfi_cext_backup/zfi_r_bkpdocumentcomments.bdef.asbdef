@@ -1,0 +1,12 @@
+managed implementation in class zbp_fi_bkp_document unique;
+strict ( 2 );
+
+define behavior for ZFI_R_BKPDocumentComments alias Comment
+with unmanaged save
+lock master
+authorization master ( instance )
+{
+  update;
+
+  action setComment parameter ZFI_S_BKPCommentPopUp result [1] $self;
+}

@@ -1,0 +1,7 @@
+projection;
+strict ( 2 );
+
+define behavior for ZFI_C_BKPDocumentComments alias Comments
+{
+  use action setComment;
+}

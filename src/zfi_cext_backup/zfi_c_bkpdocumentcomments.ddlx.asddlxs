@@ -1,0 +1,67 @@
+@Metadata.layer: #CUSTOMER
+annotate entity ZFI_C_BKPDocumentComments
+  with
+{
+ 
+  @UI            : {
+    selectionField: [{ position: 10 }],
+    lineItem   : [
+      { position: 10 },
+      { type: #FOR_ACTION, dataAction: 'setComment',label: 'Set comment' }
+    ]
+  }
+  CompanyCode;
+ 
+  @UI            : {
+    selectionField: [{ position: 20 }],
+    lineItem   : [{ position: 30 }]
+  }
+  AccountingDocument;
+ 
+  @UI            : {
+    selectionField: [{ position: 30 }],
+    lineItem   : [{ position: 40 }]
+  }
+  FiscalYear;
+ 
+  @UI            : {
+    lineItem   : [{ position: 50 }]
+  }
+  AccountingDocumentItem;
+ 
+  @UI            : {
+    lineItem   : [{ position: 20 }]
+  }
+  CompanyCodeName;
+ 
+  @UI            : {
+    lineItem   : [{ position: 60 }]
+  }
+  DocumentDate;
+ 
+  @UI            : {
+    lineItem   : [{ position: 70 }]
+  }
+  AccountingDocumentHeaderText;
+ 
+  @UI            : {
+    lineItem   : [{ position: 80 }]
+  }
+  PostingKey;
+ 
+  @UI            : {
+    lineItem   : [{ position: 90 }]
+  }
+  DocumentItemText;
+ 
+  @UI            : {
+    lineItem   : [{ position: 100 }]
+  }
+  CostCenter;
+ 
+  @UI            : {
+    lineItem   : [{ position: 110 }]
+  }
+  @EndUserText.label: 'Kommentar'
+  DocumentComment;
+}

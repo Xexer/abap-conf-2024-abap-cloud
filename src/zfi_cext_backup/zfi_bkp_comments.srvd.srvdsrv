@@ -1,0 +1,4 @@
+@EndUserText.label: 'Comments Service'
+define service ZFI_BKP_COMMENTS {
+  expose ZFI_C_BKPDocumentComments as DocumentComments;
+}
